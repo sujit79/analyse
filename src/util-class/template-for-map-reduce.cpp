@@ -17,6 +17,10 @@ class TemplateForMapReduce
 		this->reducer = reducer;
 	}
 
+	public: void operate(string input){
+		result = reducer.operate(mapper.operate(input));
+	}
+
 	public: void operate(){
 		result = reducer.operate(mapper.operate());
 	}

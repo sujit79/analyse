@@ -9,9 +9,9 @@ class HexaDecimalFromString
   public: std::string hexa_from_string(std::string input){
     std::ostringstream oss;
 
-	oss << std::hex << std::setw(8) << std::setfill('0') << std::bitset<32>{input}.to_ulong();
+	  oss << std::hex << std::setw(8) << std::setfill('0') << std::bitset<32>{input}.to_ulong();
 
-	const auto as_hex { oss.str() };
+	  const auto as_hex { oss.str() };
     return as_hex;
   }
 };  

@@ -4,7 +4,7 @@ using namespace std;
 template<class M, class R, class P, class T>  
 class TemplateForMapReduce  
 {  
-	T result;
+	T *result;
 	M mapper;
 	R reducer;
 

@@ -7,7 +7,7 @@
 template<class T>
 class HexaDecimalFromType  
 {  
-  public: std::string hexa_from_string(T input){
+  public: std::string hexa_from_type(T input){
     std::ostringstream oss;
 
 	  oss << std::hex << input;

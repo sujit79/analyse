@@ -4,15 +4,15 @@
 #include <iomanip>
 #include <sstream>
 
-template<class T>
-class HexaDecimalFromType  
-{  
-  public: std::string hexa_from_type(T input){
+template <class T>
+class HexaDecimalFromType
+{
+  public:std::string hexa_from_type(T input){
     std::ostringstream oss;
 
-	  oss << std::hex << input;
+    oss << std::hex << input;
 
-	  const auto as_hex { oss.str() };
+    const auto as_hex{oss.str()};
     return as_hex;
   }
-};  
+};

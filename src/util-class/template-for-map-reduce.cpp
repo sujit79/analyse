@@ -24,4 +24,5 @@ class TemplateForMapReduce
 	public: void operate(){
 		result = reducer.operate(mapper.operate());
 	}
+
 };

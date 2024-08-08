@@ -8,7 +8,7 @@ class TemplateForMapReduce
 	M mapper;
 	R reducer;
 
-	public: string get_result(){
+	public: T get_result(){
 		return result;
 	}
    

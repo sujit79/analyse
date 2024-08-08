@@ -4,12 +4,13 @@
 #include <iomanip>
 #include <sstream>
 
-class HexaDecimalFromString  
+template<class T>
+class HexaDecimalFromType  
 {  
-  public: std::string hexa_from_string(std::string input){
+  public: std::string hexa_from_string(T input){
     std::ostringstream oss;
 
-	  oss << std::hex << std::setw(8) << std::setfill('0') << std::bitset<32>{input}.to_ulong();
+	  oss << std::hex << std::setw(8) << std::setfill('0') << input;
 
 	  const auto as_hex { oss.str() };
     return as_hex;

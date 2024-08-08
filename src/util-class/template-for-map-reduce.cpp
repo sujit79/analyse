@@ -17,7 +17,7 @@ class TemplateForMapReduce
 		this->reducer = reducer;
 	}
 
-	public: void operate(P input){
+	public: void operate(P input []){
 		result = reducer.operate(mapper.operate(input));
 	}
 

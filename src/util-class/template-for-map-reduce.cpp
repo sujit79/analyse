@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-template<class M, class R>  
+template<class M, class R, class P, class T>  
 class TemplateForMapReduce  
 {  
-	string result;
+	T result;
 	M mapper;
 	R reducer;
 
@@ -17,7 +17,7 @@ class TemplateForMapReduce
 		this->reducer = reducer;
 	}
 
-	public: void operate(string input){
+	public: void operate(P input){
 		result = reducer.operate(mapper.operate(input));
 	}
 

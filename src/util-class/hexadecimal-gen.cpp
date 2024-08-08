@@ -10,7 +10,7 @@ class HexaDecimalFromType
   public: std::string hexa_from_string(T input){
     std::ostringstream oss;
 
-	  oss << std::hex << std::setw(8) << std::setfill('0') << input;
+	  oss << std::hex << input;
 
 	  const auto as_hex { oss.str() };
     return as_hex;
